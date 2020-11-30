@@ -1,11 +1,11 @@
 let random = false
 basic.forever(function () {
     basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
+        . # . # .
+        # . # . #
+        # . . . #
+        . # . # .
+        . . # . .
         `)
     if (maqueen.Ultrasonic(PingUnit.Centimeters) < 20 && maqueen.Ultrasonic(PingUnit.Centimeters) != 0) {
         random = Math.randomBoolean()
